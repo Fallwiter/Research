@@ -91,7 +91,7 @@ plot(edu_val)
 
 #变量，潜在变量之间的影响（plspm会构建变量间的影响）
 path_effs <- edu_val$effects
-write.table(sutnbc,file="path_effs.txt",sep="\t",row.names=F,quote=F)
+write.table(path_effs,file="path_effs.txt",sep="\t",row.names=F,quote=F)
 
 #输出模型所有结果
 sink('plspm-summary.txt')
